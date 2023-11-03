@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    background: lightgrey;
+}
+
+
+
+                    /* HEADER */
+
+header {
+    background: #F6D4F5;
+}
+
+.topbar {
+    text-align: center;
+    background: black;
+    color: pink;
+}
+
+.container {
+    width: 75%;
+    max-width: 1500px;
+}
+
+header .container {
+    padding: 1rem 0;
+}
+
+a {
+    transition: ease 0.2s;
+}
+
+img {
+    max-width: 100%;
+}
+
+header img {
+    max-width: 350px;
+}
+
+.right {
+    float: right;
+}
+
+.clear::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.left {
+    float: left;
+}
+
+#cart p {
+    text-align: right;
+    margin-right: 4px;
+    width: 75px;
+}
+
+#cart span {
+    font-weight: bold;
+}
+
+.fa-shopping-cart {
+    color: plum;
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    width: 20%;
+    text-align: center;
+    padding: 1rem 0;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+header .container > nav a:hover {
+    background: rgb(53, 50, 50);
+    color: white;
+    transition: all 0.1s ease 0s;
+}
+
+
+
+                    /* MAIN */
+
+#slider h2 {
+    position: absolute;
+    background: #F6D4F5;
+    opacity: 0.8;
+    font-size: 1.2rem;
+}
+
+#slider span {
+    font-size: 0.8rem;
+}
+
+#slider, #select, #new, #best, #crush {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background: white;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+#select {
+    transition: ease 0.2s;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+#select:hover article{
+    opacity: 0.5;
+    transition: ease 0.25s;
+}
+
+h1 {
+    flex: 1 100%;
+}
+
+.escarpin {
+    margin: 1rem;
+}
+
+#select article:hover {
+    opacity: 1;
+    transition: ease 0.25s;
+}
+
+.escarpin h3 {
+    text-align: center;
+    font-family: "Courgette";
+}
+
+#news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+#news article {
+    margin: 0 5px;
+}
+
+#news h3, #news small {
+    font-family: "Courgette";
+    text-align: center;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.fa-arrow-trend-up {
+    color: black;
+}
+
+#news h2 {
+    color: white;
+    margin: 0.5rem 0;
+}
+
+#new h2 {
+    background: deeppink;
+}
+
+#best h2 {
+    background: lightgreen;
+}
+
+#crush h2 {
+    background-color: darkcyan;
+}
+
+
+
+                    /* FOOTER */
+
+footer {
+    max-width: 1500px;
+}
+
+#info {
+    display: flex;
+    background: pink;
+}
+
+#info article {
+    padding: 1rem 0;
+}
+
+#info article:hover {
+    color: white;
+    cursor: pointer;
+    transition: ease 0.25s;
+}
+
+#info i, #info small {
+    display: block;
+    text-align: center;
+}
+
+#bottombar {
+    display: flex;
+    background: #F6D4F5;
+}
+
+#bottombar article {
+    padding: 0.5rem 0;
+}
+
+#bottombar h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#bottombar li {
+    list-style: none;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+#bottombar li:hover {
+    color: deeppink;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: ease 0.25s;
+}
+
+
+
+                    /* MEDIA QUERIES */
+
+@media screen and (max-width:640px) {
+    #cart {
+        visibility: hidden;
+    }
+
+    header img {
+        max-width: none;
+        width: 100%;
+    }
+
+    nav, #select, #info, #bottombar {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        align-items: center;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    #slider h2 {
+        position: relative;
+        margin-bottom: 0.5rem;
+    }
+
+    #select {
+        align-items: center;
+    }
+}
